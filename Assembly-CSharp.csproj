@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\PlayerMove2.cs" />
     <Compile Include="Assets\Scripts\RealMove.cs" />
+    <Compile Include="Assets\Scripts\RealMove2.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/JUN_BRO/Unity/GoldMetal/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

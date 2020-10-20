@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{20057A16-5ADE-BAE7-0F4E-CA2436143108}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/RealMove.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/RealMove2.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerMove.cs" Line="49" Column="65" />
       <File FileName="Assets/Scripts/PlayerMove2.cs" Line="28" Column="35" />
-      <File FileName="Assets/Scripts/RealMove.cs" Line="10" Column="14" />
+      <File FileName="Assets/Scripts/RealMove.cs" Line="21" Column="6" />
+      <File FileName="Assets/Scripts/RealMove2.cs" Line="17" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +12,7 @@
           <Node name="GoldMetal" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="RealMove.cs" selected="True" />
+                <Node name="RealMove2.cs" selected="True" />
               </Node>
             </Node>
           </Node>
