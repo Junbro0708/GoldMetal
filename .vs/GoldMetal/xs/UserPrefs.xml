@@ -3,9 +3,9 @@
     <Files>
       <File FileName="Assets/Scripts/PlayerMove.cs" Line="49" Column="65" />
       <File FileName="Assets/Scripts/PlayerMove2.cs" />
-      <File FileName="Assets/Scripts/RealMove.cs" Line="24" Column="51" />
+      <File FileName="Assets/Scripts/RealMove.cs" />
       <File FileName="Assets/Scripts/RealMove2.cs" />
-      <File FileName="Assets/Scripts/MyBall.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MyBall.cs" Line="15" Column="39" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,7 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c35f4f0f-3042-481a-8fe8-6597dd81b79d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b26ee407-a46a-4b3c-84e3-6f655a93b585" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
