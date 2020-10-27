@@ -5,7 +5,7 @@
       <File FileName="Assets/Scripts/PlayerMove2.cs" />
       <File FileName="Assets/Scripts/RealMove.cs" />
       <File FileName="Assets/Scripts/RealMove2.cs" />
-      <File FileName="Assets/Scripts/MyBall.cs" Line="28" Column="48" />
+      <File FileName="Assets/Scripts/MyBall.cs" Line="32" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,7 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f03af016-74fc-4455-b7b6-fd11133f51c8" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e1aba88e-6ad9-4bf4-aeac-16a7bb858c57" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
