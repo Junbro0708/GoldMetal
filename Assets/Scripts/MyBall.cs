@@ -31,5 +31,13 @@ public class MyBall : MonoBehaviour
         /*rigid.AddTorque(Vector3.back);*/
 
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.name == "Box")
+        {
+            rigid.AddForce(Vector3.up * 5, ForceMode.Impulse);
+        }
+    }
 }
 
