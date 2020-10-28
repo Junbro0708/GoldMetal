@@ -18,16 +18,18 @@ public class MyBall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if(Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump"))
         {
+            // 플레이어 점프 구현
             rigid.AddForce(Vector3.up * 50, ForceMode.Impulse);
-        } // 플레이어 점프 구현
-
+        } 
+        // 플레이어 이동 구현
         Vector3 vec = new Vector3(Input.GetAxisRaw("Horizontal"),
             0, Input.GetAxisRaw("Vertical"));
         rigid.AddForce(vec, ForceMode.Impulse);
-        }
-    */
-        rigid.AddTorque(Vector3.back); // 회전력을 부여 - 축을 기준으로 회전하기 때문에 up방향은 공회전
+        // 회전력을 부여 - 축을 기준으로 회전하기 때문에 up방향은 공회전
+        /*rigid.AddTorque(Vector3.back);*/
+
     }
 }
+
