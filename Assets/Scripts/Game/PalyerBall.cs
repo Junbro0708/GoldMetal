@@ -6,19 +6,19 @@ public class PalyerBall : MonoBehaviour
 {
     Rigidbody rigid;
     public float jumpPower = 10;
-    bool isJump;
+    int jump_cnt = 0;
 
     void Awake()
     {
         rigid = GetComponent<Rigidbody>(); // 유니티의 컴포넌트를 스크립트에 가져옴
-        isJump = false;
+        jump_cnt = 0;
     }
 
     void Update()
     {
-        if(Input.GetButtonDown("Jump") && !isJump)
+        if(Input.GetButtonDown("Jump") && (jump_cnt == 0 || jump_cnt == 1))
         {
-            isJump = true;
+            jump_cnt += 1;
             rigid.AddForce(new Vector3(0, jumpPower, 0), ForceMode.Impulse);
         }
     }
@@ -35,7 +35,7 @@ public class PalyerBall : MonoBehaviour
     {
         if(collision.gameObject.name == "Floor")
         {
-            isJump = false;
+            jump_cnt = 0;
         }
     }
 }
