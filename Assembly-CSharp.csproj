@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Game\ItemCan.cs" />
     <Compile Include="Assets\Scripts\Game\PalyerBall.cs" />
     <Compile Include="Assets\Scripts\MyBall.cs" />
     <Compile Include="Assets\Scripts\OtherBall.cs" />
