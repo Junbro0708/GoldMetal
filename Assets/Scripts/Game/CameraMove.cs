@@ -10,7 +10,7 @@ public class CameraMove : MonoBehaviour
     void Awake()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-        offset = transform.position - playerTransform.position;
+        offset = transform.position - playerTransform.position; // 카메라 벡터 - 공의 벡터
     }
 
     void LateUpdate()
