@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{20057A16-5ADE-BAE7-0F4E-CA2436143108}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game/CameraMove.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game/GameManeger.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerMove.cs" Line="49" Column="65" />
       <File FileName="Assets/Scripts/PlayerMove2.cs" />
@@ -7,9 +7,10 @@
       <File FileName="Assets/Scripts/RealMove2.cs" />
       <File FileName="Assets/Scripts/MyBall.cs" />
       <File FileName="Assets/Scripts/OtherBall.cs" />
-      <File FileName="Assets/Scripts/Game/PalyerBall.cs" />
+      <File FileName="Assets/Scripts/Game/PalyerBall.cs" Line="55" Column="24" />
       <File FileName="Assets/Scripts/Game/ItemCan.cs" />
-      <File FileName="Assets/Scripts/Game/CameraMove.cs" Line="13" Column="82" />
+      <File FileName="Assets/Scripts/Game/CameraMove.cs" />
+      <File FileName="Assets/Scripts/Game/GameManeger.cs" Line="7" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +19,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Game" expanded="True">
-                  <Node name="CameraMove.cs" selected="True" />
+                  <Node name="GameManeger.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -29,7 +30,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9077051f-0e4a-4254-a778-8d798c5a830b" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6f6ed1fb-fb2e-4452-aa99-e32d6d2c74af" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

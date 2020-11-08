@@ -7,6 +7,7 @@ public class PalyerBall : MonoBehaviour
     Rigidbody rigid;
     public float jumpPower = 10;
     public int item_cnt = 0;
+    public GameManeger manager;
     int jump_cnt = 0;
     AudioSource audio;
 
@@ -49,6 +50,10 @@ public class PalyerBall : MonoBehaviour
             item_cnt++;
             audio.Play();
             other.gameObject.SetActive(false);
+        }
+        if (other.tag == "Finish")
+        {
+            GameObject.FindGameObjectWithTag
         }
     }
 }

@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Game\CameraMove.cs" />
+    <Compile Include="Assets\Scripts\Game\GameManeger.cs" />
     <Compile Include="Assets\Scripts\Game\ItemCan.cs" />
     <Compile Include="Assets\Scripts\Game\PalyerBall.cs" />
     <Compile Include="Assets\Scripts\MyBall.cs" />
