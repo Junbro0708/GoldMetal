@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PalyerBall : MonoBehaviour
 {
@@ -53,7 +54,16 @@ public class PalyerBall : MonoBehaviour
         }
         if (other.tag == "Finish")
         {
-            GameObject.FindGameObjectWithTag
+            if(item_cnt == manager.totalItemCount)
+            {
+                //Game Clear
+                SceneManager.LoadScene("OneScene");
+            }
+            else
+            {
+                //Restart
+                SceneManager.LoadScene("Game Scene");
+            }
         }
     }
 }
