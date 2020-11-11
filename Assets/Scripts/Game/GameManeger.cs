@@ -5,5 +5,5 @@ using UnityEngine;
 public class GameManeger : MonoBehaviour
 {
     public int totalItemCount;
-    
+    public int stage;
 }

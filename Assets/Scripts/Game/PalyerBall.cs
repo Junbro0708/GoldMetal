@@ -57,12 +57,12 @@ public class PalyerBall : MonoBehaviour
             if(item_cnt == manager.totalItemCount)
             {
                 //Game Clear
-                SceneManager.LoadScene("OneScene");
+                SceneManager.LoadScene("GameScene1_" + (manager.stage+1).ToString());
             }
             else
             {
                 //Restart
-                SceneManager.LoadScene("Game Scene");
+                SceneManager.LoadScene("GameScene1_" + (manager.stage).ToString());
             }
         }
     }
