@@ -7,10 +7,10 @@
       <File FileName="Assets/Scripts/RealMove2.cs" />
       <File FileName="Assets/Scripts/MyBall.cs" />
       <File FileName="Assets/Scripts/OtherBall.cs" />
-      <File FileName="Assets/Scripts/Game/PalyerBall.cs" Line="67" Column="14" />
-      <File FileName="Assets/Scripts/Game/ItemCan.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Game/PalyerBall.cs" Line="53" Column="42" />
+      <File FileName="Assets/Scripts/Game/ItemCan.cs" />
       <File FileName="Assets/Scripts/Game/CameraMove.cs" />
-      <File FileName="Assets/Scripts/Game/GameManeger.cs" Line="19" Column="1" />
+      <File FileName="Assets/Scripts/Game/GameManeger.cs" Line="16" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -30,7 +30,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1d79c204-03d0-4476-8d5f-019b538b06e3" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0224facf-e9a6-4805-ae0a-ffd3cf12e33e" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

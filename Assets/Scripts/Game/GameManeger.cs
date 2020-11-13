@@ -2,13 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManeger : MonoBehaviour
 {
     public int totalItemCount;
     public int stage;
+    public Text stageCountText;
+    public Text playerCountText;
 
-    private void OnTriggerEnter(Collider other)
+    void Awake()
+    {
+        stageCountText.text = "/ " + totalItemCount.ToString();
+    }
+
+    public void GetItemCount(int count)
+    {
+        playerCountText.text = count.ToString();
+    }
+
+    void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
         {

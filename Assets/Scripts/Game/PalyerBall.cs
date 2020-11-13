@@ -50,6 +50,7 @@ public class PalyerBall : MonoBehaviour
         {
             item_cnt++;
             audio.Play();
+            manager.GetItemCount(item_cnt);
             other.gameObject.SetActive(false);
         }
         if (other.tag == "Finish")
