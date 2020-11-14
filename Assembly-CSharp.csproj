@@ -64,16 +64,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Game\CameraMove.cs" />
-    <Compile Include="Assets\Scripts\Game\GameManeger.cs" />
-    <Compile Include="Assets\Scripts\Game\ItemCan.cs" />
-    <Compile Include="Assets\Scripts\Game\PalyerBall.cs" />
-    <Compile Include="Assets\Scripts\MyBall.cs" />
-    <Compile Include="Assets\Scripts\OtherBall.cs" />
-    <Compile Include="Assets\Scripts\PlayerMove.cs" />
-    <Compile Include="Assets\Scripts\PlayerMove2.cs" />
-    <Compile Include="Assets\Scripts\RealMove.cs" />
-    <Compile Include="Assets\Scripts\RealMove2.cs" />
+    <Compile Include="Assets\Scripts\Ball Game\CameraMove.cs" />
+    <Compile Include="Assets\Scripts\Ball Game\GameManeger.cs" />
+    <Compile Include="Assets\Scripts\Ball Game\ItemCan.cs" />
+    <Compile Include="Assets\Scripts\Ball Game\MyBall.cs" />
+    <Compile Include="Assets\Scripts\Ball Game\OtherBall.cs" />
+    <Compile Include="Assets\Scripts\Ball Game\PalyerBall.cs" />
+    <Compile Include="Assets\Scripts\Ball Game\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\Ball Game\PlayerMove2.cs" />
+    <Compile Include="Assets\Scripts\Ball Game\RealMove.cs" />
+    <Compile Include="Assets\Scripts\Ball Game\RealMove2.cs" />
+    <None Include="Assets\4QuadAcion Pack\License.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/JUN_BRO/Unity/GoldMetal/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
