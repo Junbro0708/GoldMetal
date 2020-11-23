@@ -19,17 +19,28 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GetInput(); // 제일 위에 있어야 함
+        Move();
+        Turn();
+    }
+
+    void GetInput()
+    {
         hAxis = Input.GetAxisRaw("Horizontal");
         vAxis = Input.GetAxisRaw("Vertical");
         wDown = Input.GetButton("Walk");
-
+    }
+    void Move()
+    {
         moveVec = new Vector3(hAxis, 0, vAxis).normalized;
 
         transform.position += moveVec * moveSpeed * (wDown ? 0.3f : 1f) * Time.deltaTime; // 삼항 연산자
 
         anim.SetBool("isRun", moveVec != Vector3.zero);
         anim.SetBool("isWalk", wDown);
-
+    }
+    void Turn()
+    {
         transform.LookAt(transform.position + moveVec); // 우리가 나아가는 방향으로 바라본다.
     }
 }

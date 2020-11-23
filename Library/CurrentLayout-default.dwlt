@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 303, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 117
+  controlID: 99
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 478, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 66
+  controlID: 145
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_MinSize: {x: 478, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 18
+  controlID: 144
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_MinSize: {x: 781, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 171
+  controlID: 35
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_MinSize: {x: 303, y: 442}
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
-  controlID: 172
+  controlID: 36
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -492,9 +492,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c6520000
-      m_LastClickedID: 21190
-      m_ExpandedIDs: 8cf6ffff4cfaffff70fbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 70fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -595,19 +595,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/1GameScenes/Quater View Game
+    - Assets/5Scripts/Quad Game
   m_ViewMode: 1
   m_StartGridSize: 42
   m_LastFolders:
-  - Assets/1GameScenes/Quater View Game
+  - Assets/5Scripts/Quad Game
   m_LastFoldersGridSize: 42
   m_LastProjectPath: /Users/JUN_BRO/Unity/GoldMetal
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 46}
-    m_SelectedIDs: 52350000
-    m_LastClickedID: 13650
+    m_SelectedIDs: 78350000
+    m_LastClickedID: 13688
     m_ExpandedIDs: 00000000483500004a3500004c35000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -819,7 +819,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 0, y: 3.08, z: 0}
     speed: 2
-    m_Value: {x: -0.00000042557718, y: 3.0799997, z: -0.0000012856722}
+    m_Value: {x: 0, y: 3.08, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -867,11 +867,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.0014866996, y: 0.12242218, z: 0.00020007075, w: -0.99251133}
     speed: 2
-    m_Value: {x: -0.005951335, y: 0.129856, z: -0.00076285505, w: -0.99151474}
+    m_Value: {x: 0.0014866489, y: 0.12241801, z: 0.00020006392, w: -0.9924775}
   m_Size:
     m_Target: 9.038929
     speed: 2
-    m_Value: 9.038927
+    m_Value: 9.038929
   m_Ortho:
     m_Target: 0
     speed: 2
