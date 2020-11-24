@@ -9,11 +9,14 @@ public class Player : MonoBehaviour
     public float moveSpeed = 0.5f;
     Vector3 moveVec;
     Animator anim;
+    Rigidbody rigid;
     bool wDown;
+    bool jDown;
 
     void Awake()
     {
         anim = GetComponentInChildren<Animator>();
+        rigid = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -22,6 +25,7 @@ public class Player : MonoBehaviour
         GetInput(); // 제일 위에 있어야 함
         Move();
         Turn();
+        Jump();
     }
 
     void GetInput()
@@ -29,6 +33,7 @@ public class Player : MonoBehaviour
         hAxis = Input.GetAxisRaw("Horizontal");
         vAxis = Input.GetAxisRaw("Vertical");
         wDown = Input.GetButton("Walk");
+        jDown = Input.GetButtonDown("Jump");
     } // 입력 함수
     void Move()
     {
@@ -43,4 +48,11 @@ public class Player : MonoBehaviour
     {
         transform.LookAt(transform.position + moveVec); // 우리가 나아가는 방향으로 바라본다.
     } // 캐릭터 회전 함수
+    void Jump()
+    {
+        if (jDown)
+        {
+            rigid.AddForce(Vector3.up * 15, ForceMode.Impulse);
+        }
+    }
 }
