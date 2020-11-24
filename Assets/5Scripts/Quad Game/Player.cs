@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
         hAxis = Input.GetAxisRaw("Horizontal");
         vAxis = Input.GetAxisRaw("Vertical");
         wDown = Input.GetButton("Walk");
-    }
+    } // 입력 함수
     void Move()
     {
         moveVec = new Vector3(hAxis, 0, vAxis).normalized;
@@ -38,9 +38,9 @@ public class Player : MonoBehaviour
 
         anim.SetBool("isRun", moveVec != Vector3.zero);
         anim.SetBool("isWalk", wDown);
-    }
+    } // 캐릭터 이동 함수
     void Turn()
     {
         transform.LookAt(transform.position + moveVec); // 우리가 나아가는 방향으로 바라본다.
-    }
+    } // 캐릭터 회전 함수
 }
