@@ -34,6 +34,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Floor")
         {
             isJump = false;
+            anim.SetBool("isJump", false);
         }
     }
 
@@ -62,6 +63,8 @@ public class Player : MonoBehaviour
         if (jDown && !isJump)
         {
             rigid.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
+            anim.SetBool("isJump", true);
+            anim.SetTrigger("doJump");
             isJump = true;
         }
     }
