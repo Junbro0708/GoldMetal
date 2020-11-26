@@ -9,11 +9,13 @@ public class Player : MonoBehaviour
     public float moveSpeed = 0.5f;
     public float jumpPower = 1f;
     Vector3 moveVec;
+    Vector3 dodgeVec;
     Animator anim;
     Rigidbody rigid;
     bool wDown;
     bool jDown;
     bool isJump = false;
+    bool isDodge;
 
     void Awake()
     {
@@ -28,6 +30,7 @@ public class Player : MonoBehaviour
         Move();
         Turn();
         Jump();
+        Dodge();
     }
     void OnCollisionEnter(Collision collision)
     {
@@ -49,6 +52,9 @@ public class Player : MonoBehaviour
     {
         moveVec = new Vector3(hAxis, 0, vAxis).normalized;
 
+        if (isDodge)
+            moveVec = dodgeVec;
+
         transform.position += moveVec * moveSpeed * (wDown ? 0.3f : 1f) * Time.deltaTime; // 삼항 연산자
 
         anim.SetBool("isRun", moveVec != Vector3.zero);
@@ -60,12 +66,29 @@ public class Player : MonoBehaviour
     } // 캐릭터 회전 함수
     void Jump()
     {
-        if (jDown && !isJump)
+        if (jDown && moveVec == Vector3.zero && !isJump && !isDodge)
         {
             rigid.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
             anim.SetBool("isJump", true);
             anim.SetTrigger("doJump");
             isJump = true;
         }
+    }
+    void Dodge()
+    {
+        if(jDown && moveVec != Vector3.zero && !isJump && !isDodge)
+        {
+            dodgeVec = moveVec;
+            moveSpeed *= 2;
+            anim.SetTrigger("doDodge");
+            isDodge = true;
+
+            Invoke("DodgeOut", 0.6f);
+        }
+    }
+    void DodgeOut()
+    {
+        moveSpeed *= 0.5f;
+        isDodge = false;
     }
 }
