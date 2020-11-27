@@ -8,14 +8,25 @@ public class Player : MonoBehaviour
     float vAxis;
     public float moveSpeed = 0.5f;
     public float jumpPower = 1f;
+    public GameObject[] weapons;
+    public bool[] hasWeapons;
+
     Vector3 moveVec;
     Vector3 dodgeVec;
+
     Animator anim;
     Rigidbody rigid;
+    GameObject nearObject;
+
     bool wDown;
     bool jDown;
+    bool iDown;
     bool isJump = false;
     bool isDodge;
+
+    bool sDown1;
+    bool sDown2;
+    bool sDown3;
 
     void Awake()
     {
@@ -31,6 +42,8 @@ public class Player : MonoBehaviour
         Turn();
         Jump();
         Dodge();
+        Interaction();
+        Swap();
     }
     void OnCollisionEnter(Collision collision)
     {
@@ -40,13 +53,28 @@ public class Player : MonoBehaviour
             anim.SetBool("isJump", false);
         }
     }
-
+    void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Weapon")
+            nearObject = other.gameObject;
+        Debug.Log(nearObject);
+    }
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Weapon")
+            nearObject = null;
+    }
     void GetInput()
     {
         hAxis = Input.GetAxisRaw("Horizontal");
         vAxis = Input.GetAxisRaw("Vertical");
         wDown = Input.GetButton("Walk");
         jDown = Input.GetButtonDown("Jump");
+        iDown = Input.GetButtonDown("Interaction");
+
+        sDown1 = Input.GetButtonDown("Swap1");
+        sDown2 = Input.GetButtonDown("Swap2");
+        sDown3 = Input.GetButtonDown("Swap3");
     } // 입력 함수
     void Move()
     {
@@ -90,5 +118,32 @@ public class Player : MonoBehaviour
     {
         moveSpeed *= 0.5f;
         isDodge = false;
+    }
+    void Interaction()
+    {
+        if(iDown && nearObject != null && !isJump && !isDodge)
+        {
+            if(nearObject.tag == "Weapon")
+            {
+                Item item = nearObject.GetComponent<Item>();
+                int indexWeapon = item.value;
+                hasWeapons[indexWeapon] = true;
+
+                Destroy(nearObject);
+            }
+        }
+    }
+    void Swap()
+    {
+        int weaponIndex = -1;
+
+        if (sDown1) weaponIndex = 0;
+        if (sDown2) weaponIndex = 1;
+        if (sDown3) weaponIndex = 2;
+
+        if ((sDown1 || sDown2 || sDown3) && !isJump && !isDodge)
+        {
+            weapons[weaponIndex].SetActive(true);
+        }
     }
 }

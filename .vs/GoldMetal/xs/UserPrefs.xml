@@ -1,11 +1,9 @@
 ﻿<Properties StartupConfiguration="{20057A16-5ADE-BAE7-0F4E-CA2436143108}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/5Scripts/Quad Game/Item.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/5Scripts/Quad Game/Player.cs">
     <Files>
-      <File FileName="Assets/5Scripts/Quad Game/Player.cs" Line="56" Column="32" />
-      <File FileName="Assets/5Scripts/Quad Game/Follow.cs" Line="1" Column="1" />
+      <File FileName="Assets/5Scripts/Quad Game/Player.cs" Line="46" Column="16" />
+      <File FileName="Assets/5Scripts/Quad Game/Follow.cs" />
       <File FileName="Assets/5Scripts/Ball Game/MyBall.cs" />
-      <File FileName="Assets/5Scripts/Ball Game/PlayerMove.cs" />
-      <File FileName="Assets/5Scripts/Ball Game/PalyerBall.cs" />
       <File FileName="Assets/5Scripts/Quad Game/Item.cs" Line="13" Column="41" />
     </Files>
     <Pads>
@@ -16,7 +14,7 @@
               <Node name="5Scripts" expanded="True">
                 <Node name="Ball Game" expanded="True" />
                 <Node name="Quad Game" expanded="True">
-                  <Node name="Item.cs" selected="True" />
+                  <Node name="Player.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -27,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="866c7e15-3e59-4148-a394-7c34390cc426" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7a673dbd-8cfb-43ff-a869-75a15c913b5a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
