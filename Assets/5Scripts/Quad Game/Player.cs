@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     Animator anim;
     Rigidbody rigid;
     GameObject nearObject;
+    GameObject equipWeapon;
 
     bool wDown;
     bool jDown;
@@ -143,7 +144,11 @@ public class Player : MonoBehaviour
 
         if ((sDown1 || sDown2 || sDown3) && !isJump && !isDodge)
         {
-            weapons[weaponIndex].SetActive(true);
+            if(equipWeapon != null)
+                equipWeapon.SetActive(false);
+
+            equipWeapon = weapons[weaponIndex];
+            equipWeapon.SetActive(true);
         }
     }
 }
