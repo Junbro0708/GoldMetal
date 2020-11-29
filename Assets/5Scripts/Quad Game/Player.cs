@@ -136,7 +136,7 @@ public class Player : MonoBehaviour
     }
     void Swap()
     {
-        int weaponIndex = -1;
+        int weaponIndex = -1; // 일단 값을 못 바꾸도록 음수 지정
 
         if (sDown1) weaponIndex = 0;
         if (sDown2) weaponIndex = 1;
