@@ -25,11 +25,11 @@ public class Player : MonoBehaviour
     bool iDown;
     bool isJump = false;
     bool isDodge;
-    bool isSwap;
+    bool isSwap; // 캐릭터 이동과 조작 변수
 
     bool sDown1;
     bool sDown2;
-    bool sDown3;
+    bool sDown3; // 아이템 클릭 변수
 
     void Awake()
     {
