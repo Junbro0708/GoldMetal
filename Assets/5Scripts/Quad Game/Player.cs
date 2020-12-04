@@ -12,6 +12,16 @@ public class Player : MonoBehaviour
     public GameObject[] weapons;
     public bool[] hasWeapons;
 
+    public int ammo = 0;
+    public int coin = 0;
+    public int health = 100;
+    public int hasGrenades = 0;
+
+    int maxAmmo = 999;
+    int maxCoin = 99999;
+    int maxHealth = 100;
+    int maxHasGrenades = 4;
+
     Vector3 moveVec;
     Vector3 dodgeVec;
 
