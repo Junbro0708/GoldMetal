@@ -66,6 +66,37 @@ public class Player : MonoBehaviour
             anim.SetBool("isJump", false);
         }
     }
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Item")
+        {
+            Item item = other.GetComponent<Item>();
+            switch(item.type)
+            {
+                case Item.Type.Ammo:
+                    ammo += item.value;
+                    if (ammo > maxAmmo)
+                        ammo = maxAmmo;
+                    break;
+                case Item.Type.Coin:
+                    coin += item.value;
+                    if (coin > maxCoin)
+                        coin = maxCoin;
+                    break;
+                case Item.Type.Grenade:
+                    hasGrenades  += item.value;
+                    if (hasGrenades > maxHasGrenades)
+                        hasGrenades = maxHasGrenades;
+                    break;
+                case Item.Type.Heart:
+                    health += item.value;
+                    if (health > maxHealth)
+                        health = maxHealth;
+                    break;
+            }
+            Destroy(other.gameObject);
+        }
+    }
     void OnTriggerStay(Collider other)
     {
         if (other.tag == "Weapon")
