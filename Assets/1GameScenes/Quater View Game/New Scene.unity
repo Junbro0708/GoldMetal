@@ -149,7 +149,7 @@ MonoBehaviour:
   hasWeapons: 000000
   ammo: 0
   coin: 0
-  health: 0
+  health: 100
   hasGrenades: 0
 --- !u!136 &220008049
 CapsuleCollider:
