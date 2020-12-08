@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 303, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 137
+  controlID: 145
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 478, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 175
+  controlID: 167
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_MinSize: {x: 478, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 47
+  controlID: 166
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 781, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 110
+  controlID: 16
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -294,7 +294,7 @@ MonoBehaviour:
   m_MinSize: {x: 303, y: 442}
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
-  controlID: 111
+  controlID: 17
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -409,7 +409,7 @@ MonoBehaviour:
     m_ControlHash: 0
     m_PrefName: 
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: 13228
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_ParentInspectorWindow: {fileID: 20}
 --- !u!114 &17
@@ -530,10 +530,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ac330000
-      m_LastClickedID: 13228
-      m_ExpandedIDs: 70fbffff
+      scrollPos: {x: 0, y: 54}
+      m_SelectedIDs: baf0ffff
+      m_LastClickedID: -3910
+      m_ExpandedIDs: d0f0ffffaaf1ffffa6f8ffffbef8ffffd6f8fffff6f8ffff96f9ffffc6faffff70fbffffb6330000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -594,7 +594,7 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 16}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 597
+  m_LastVerticalScrollValue: 0
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -634,20 +634,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/5Scripts/Quad Game
+    - Assets/4QuadAcion Pack/Materials
   m_ViewMode: 1
   m_StartGridSize: 42
   m_LastFolders:
-  - Assets/5Scripts/Quad Game
+  - Assets/4QuadAcion Pack/Materials
   m_LastFoldersGridSize: 42
   m_LastProjectPath: /Users/JUN_BRO/Unity/GoldMetal
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 30}
-    m_SelectedIDs: c6360000
-    m_LastClickedID: 14022
-    m_ExpandedIDs: 00000000903600009236000000ca9a3b
+    m_SelectedIDs: ba360000
+    m_LastClickedID: 14010
+    m_ExpandedIDs: 000000009036000092360000b836000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -727,7 +727,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 22}
     m_GridSize: 42
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 129
@@ -856,9 +856,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.60080004, y: 7.790475, z: -9.849299}
+    m_Target: {x: 1.08, y: 1.5, z: -14.06}
     speed: 2
-    m_Value: {x: -0.60080004, y: 7.790475, z: -9.849299}
+    m_Value: {x: 1.08, y: 1.5, z: -14.06}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -904,13 +904,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.32420978, y: 0.12137453, z: -0.041901637, w: -0.93731683}
+    m_Target: {x: -0.09955595, y: -0.65822303, z: 0.08836423, w: -0.7410735}
     speed: 2
-    m_Value: {x: -0.32418346, y: 0.12136468, z: -0.041898236, w: -0.9372407}
+    m_Value: {x: -0.09941498, y: -0.6592788, z: 0.088506065, w: -0.74002343}
   m_Size:
-    m_Target: 12.008046
+    m_Target: 12.41679
     speed: 2
-    m_Value: 12.008046
+    m_Value: 12.404302
   m_Ortho:
     m_Target: 0
     speed: 2

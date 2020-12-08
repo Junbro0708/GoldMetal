@@ -10,12 +10,13 @@ public class Player : MonoBehaviour
     public float moveSpeed = 0.5f;
     public float jumpPower = 1f;
     public GameObject[] weapons;
+    public GameObject[] grenades;
     public bool[] hasWeapons;
+    public int hasGrenades = 0;
 
     public int ammo = 0;
     public int coin = 0;
     public int health = 100;
-    public int hasGrenades = 0;
 
     int maxAmmo = 999;
     int maxCoin = 99999;
