@@ -76,6 +76,7 @@
     <Compile Include="Assets\5Scripts\Ball Game\RealMove2.cs" />
     <Compile Include="Assets\5Scripts\Quad Game\Follow.cs" />
     <Compile Include="Assets\5Scripts\Quad Game\Item.cs" />
+    <Compile Include="Assets\5Scripts\Quad Game\Orbit.cs" />
     <Compile Include="Assets\5Scripts\Quad Game\Player.cs" />
     <None Include="Assets\4QuadAcion Pack\License.txt" />
     <Reference Include="Unity.Timeline.Editor">
