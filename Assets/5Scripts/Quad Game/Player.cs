@@ -85,6 +85,7 @@ public class Player : MonoBehaviour
                         coin = maxCoin;
                     break;
                 case Item.Type.Grenade:
+                    grenades[hasGrenades].SetActive(true);
                     hasGrenades  += item.value;
                     if (hasGrenades > maxHasGrenades)
                         hasGrenades = maxHasGrenades;
