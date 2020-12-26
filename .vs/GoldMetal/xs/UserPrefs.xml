@@ -3,15 +3,9 @@
     <Files>
       <File FileName="Assets/5Scripts/Quad Game/Weapon.cs" Line="31" Column="34" />
       <File FileName="Assets/5Scripts/Quad Game/Orbit.cs" />
-      <File FileName="Assets/5Scripts/Quad Game/Player.cs" Line="83" Column="40" />
+      <File FileName="Assets/5Scripts/Quad Game/Player.cs" Line="47" Column="23" />
       <File FileName="Assets/5Scripts/Quad Game/Follow.cs" />
-      <File FileName="Assets/5Scripts/Ball Game/MyBall.cs" />
       <File FileName="Assets/5Scripts/Quad Game/Item.cs" />
-      <File FileName="Assets/5Scripts/Ball Game/PlayerMove.cs" />
-      <File FileName="Assets/5Scripts/Ball Game/PalyerBall.cs" />
-      <File FileName="Assets/5Scripts/Ball Game/RealMove.cs" />
-      <File FileName="Assets/5Scripts/Ball Game/RealMove2.cs" />
-      <File FileName="Assets/5Scripts/Ball Game/PlayerMove2.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -32,7 +26,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="196e91dd-fc81-49bd-8c62-f50e766224ff" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5aecf0f7-efae-44a2-a79a-bca15223204b" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

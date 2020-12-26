@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     int equipWeaponIndex = -1;
     float hAxis;
     float vAxis;
+    float fireDelay;
     public float moveSpeed = 0.5f;
     public float jumpPower = 1f;
     public GameObject[] weapons;
@@ -29,7 +30,7 @@ public class Player : MonoBehaviour
     Animator anim;
     Rigidbody rigid;
     GameObject nearObject;
-    GameObject equipWeapon;
+    Weapon equipWeapon;
 
     bool wDown;
     bool jDown;
@@ -41,6 +42,9 @@ public class Player : MonoBehaviour
     bool sDown1;
     bool sDown2;
     bool sDown3; // 아이템 클릭 변수
+
+    bool fDown;
+    bool isFireReady = true; // 공격 변수
 
     void Awake()
     {
@@ -58,6 +62,7 @@ public class Player : MonoBehaviour
         Dodge();
         Interaction();
         Swap();
+        Attack();
     }
     void OnCollisionEnter(Collision collision)
     {
@@ -121,12 +126,14 @@ public class Player : MonoBehaviour
         sDown1 = Input.GetButtonDown("Swap1");
         sDown2 = Input.GetButtonDown("Swap2");
         sDown3 = Input.GetButtonDown("Swap3");
+
+        fDown = Input.GetButtonDown("Fire1");
     } // 입력 함수
     void Move()
     {
         moveVec = new Vector3(hAxis, 0, vAxis).normalized;
 
-        if (isSwap)
+        if (isSwap || !isFireReady)
             moveVec = Vector3.zero;
 
         if (isDodge)
@@ -201,11 +208,11 @@ public class Player : MonoBehaviour
         if ((sDown1 || sDown2 || sDown3) && !isJump && !isDodge)
         {
             if(equipWeapon != null)
-                equipWeapon.SetActive(false);
+                equipWeapon.gameObject.SetActive(false);
 
             equipWeaponIndex = weaponIndex;
-            equipWeapon = weapons[weaponIndex];
-            equipWeapon.SetActive(true);
+            equipWeapon = weapons[weaponIndex].GetComponent<Weapon>();
+            equipWeapon.gameObject.SetActive(true);
 
             anim.SetTrigger("doSwap");
 
@@ -217,5 +224,23 @@ public class Player : MonoBehaviour
     void SwapOut()
     {
         isSwap = false;
+    }
+
+    void Attack()
+    {
+        if(equipWeapon == null)
+        {
+            return;
+        }
+
+        fireDelay += Time.deltaTime;
+        isFireReady = equipWeapon.rate < fireDelay; // 공격속도보다 딜레이가 크다면
+
+        if(fDown && isFireReady && !isDodge && !isSwap)
+        {
+            equipWeapon.Use();
+            anim.SetTrigger("doSwing");
+            fireDelay = 0;
+        }
     }
 }

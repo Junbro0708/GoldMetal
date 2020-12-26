@@ -10,7 +10,7 @@ public class PalyerBall : MonoBehaviour
     public int item_cnt = 0;
     public GameManeger manager;
     int jump_cnt = 0;
-    AudioSource audio;
+    new AudioSource audio;
 
     void Awake()
     {
