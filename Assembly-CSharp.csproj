@@ -74,6 +74,7 @@
     <Compile Include="Assets\5Scripts\Ball Game\PlayerMove2.cs" />
     <Compile Include="Assets\5Scripts\Ball Game\RealMove.cs" />
     <Compile Include="Assets\5Scripts\Ball Game\RealMove2.cs" />
+    <Compile Include="Assets\5Scripts\Quad Game\Bullet.cs" />
     <Compile Include="Assets\5Scripts\Quad Game\Follow.cs" />
     <Compile Include="Assets\5Scripts\Quad Game\Item.cs" />
     <Compile Include="Assets\5Scripts\Quad Game\Orbit.cs" />
