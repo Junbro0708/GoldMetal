@@ -15,15 +15,18 @@ public class Weapon : MonoBehaviour
     public Transform bulletCasePos;
     public GameObject bulletCase;
 
+    public int maxAmmo;
+    public int curAmmo;
+
     public void Use()
     {
         if(type == Type.Melee)
         {
             StopCoroutine("Swing"); // 코루틴이 이미 실행되고 있을 수 있기 때문에 멈추게한 다음 다시 실행 
             StartCoroutine("Swing");
-        }else if (type == Type.Range)
+        }else if (type == Type.Range && curAmmo > 0)
         {
-            StopCoroutine("Shot"); 
+            curAmmo--;
             StartCoroutine("Shot");
         }
     }
@@ -54,7 +57,7 @@ public class Weapon : MonoBehaviour
         //1 총알 발사
         GameObject intantBullet = Instantiate(bullet, bulletPos.position, bulletPos.rotation);
         Rigidbody bulletRigid = intantBullet.GetComponent<Rigidbody>();
-        bulletRigid.velocity = bulletPos.forward * 50;
+        bulletRigid.velocity = bulletPos.forward * 500;
 
         yield return null;
         //2 탄피 배출

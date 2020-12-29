@@ -43,6 +43,7 @@ public class Player : MonoBehaviour
     bool sDown2;
     bool sDown3; // 아이템 클릭 변수
 
+    bool rDown;
     bool fDown;
     bool isFireReady = true; // 공격 변수
 
@@ -63,6 +64,7 @@ public class Player : MonoBehaviour
         Interaction();
         Swap();
         Attack();
+        Reload();
     }
     void OnCollisionEnter(Collision collision)
     {
@@ -128,6 +130,7 @@ public class Player : MonoBehaviour
         sDown3 = Input.GetButtonDown("Swap3");
 
         fDown = Input.GetButton("Fire1");
+        rDown = Input.GetButton("Reload");
     } // 입력 함수
     void Move()
     {
@@ -241,6 +244,20 @@ public class Player : MonoBehaviour
             equipWeapon.Use();
             anim.SetTrigger(equipWeapon.type == Weapon.Type.Melee ? "doSwing" : "doShot");
             fireDelay = 0;
+        }
+    }
+
+    void Reload()
+    {
+        if(equipWeapon == null || equipWeapon.type == Weapon.Type.Melee)
+            return;
+
+        if (ammo == 0)
+            return;
+
+        if(rDown && !isJump && !isDodge && !isSwap && isFireReady)
+        {
+
         }
     }
 }
