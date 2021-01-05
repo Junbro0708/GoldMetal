@@ -1,24 +1,20 @@
 ﻿<Properties StartupConfiguration="{20057A16-5ADE-BAE7-0F4E-CA2436143108}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/5Scripts/Quad Game/Bullet.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/5Scripts/basicC.cs">
     <Files>
-      <File FileName="Assets/5Scripts/Quad Game/Weapon.cs" Line="66" Column="65" />
+      <File FileName="Assets/5Scripts/Quad Game/Weapon.cs" Line="29" Column="23" />
       <File FileName="Assets/5Scripts/Quad Game/Orbit.cs" />
-      <File FileName="Assets/5Scripts/Quad Game/Player.cs" />
+      <File FileName="Assets/5Scripts/Quad Game/Player.cs" Line="260" Column="1" />
       <File FileName="Assets/5Scripts/Quad Game/Follow.cs" />
       <File FileName="Assets/5Scripts/Quad Game/Item.cs" />
-      <File FileName="Assets/5Scripts/Quad Game/Bullet.cs" Line="16" Column="33" />
+      <File FileName="Assets/5Scripts/Quad Game/Bullet.cs" />
+      <File FileName="Assets/5Scripts/basicC.cs" Line="40" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GoldMetal" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="5Scripts" expanded="True">
-                <Node name="Ball Game" expanded="True" />
-                <Node name="Quad Game" expanded="True">
-                  <Node name="Bullet.cs" selected="True" />
-                </Node>
-              </Node>
+            <Node name="Assets" expanded="True" selected="True">
+              <Node name="5Scripts" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -27,7 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9eac093f-5fe9-4c39-ac95-7a15067ed95f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="008504d9-5d99-4781-9ce8-47e4c55c8915" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -813,6 +813,8 @@ MonoBehaviour:
   bulletCasePos: {fileID: 653968624}
   bulletCase: {fileID: 3047490881995199248, guid: 453c6f22256b74030a63dc9db0061672,
     type: 3}
+  maxAmmo: 0
+  curAmmo: 0
 --- !u!4 &831798925 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2411975710238412848, guid: 8f5e135a19626f544908fc8f156144b9,
@@ -1470,6 +1472,49 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487828035}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1533931288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1533931290}
+  - component: {fileID: 1533931289}
+  m_Layer: 0
+  m_Name: Basic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1533931289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533931288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765916564e27e427487c0bd695317224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1533931290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533931288}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.035493, y: 2.7875314, z: -12.894967}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1564887050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1635,6 +1680,8 @@ MonoBehaviour:
   bullet: {fileID: 0}
   bulletCasePos: {fileID: 0}
   bulletCase: {fileID: 0}
+  maxAmmo: 0
+  curAmmo: 0
 --- !u!1 &1690709243
 GameObject:
   m_ObjectHideFlags: 0
@@ -2433,6 +2480,8 @@ MonoBehaviour:
   bulletCasePos: {fileID: 952036952}
   bulletCase: {fileID: 3047490881995199248, guid: 453c6f22256b74030a63dc9db0061672,
     type: 3}
+  maxAmmo: 0
+  curAmmo: 0
 --- !u!1001 &2135330971
 PrefabInstance:
   m_ObjectHideFlags: 0
